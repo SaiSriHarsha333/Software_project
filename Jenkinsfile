@@ -6,9 +6,8 @@ pipeline {
         git(url: 'https://github.com/SaiSriHarsha333/Software_project.git', branch: 'master')
       }
     }
-    stage('Docker') {
+    stage('Change Dir') {
       steps {
-        build 'sudo docker-compose up'
         dir(path: '/rms/')
       }
     }
