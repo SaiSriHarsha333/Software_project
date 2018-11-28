@@ -6,9 +6,9 @@ pipeline {
         git(url: 'https://github.com/SaiSriHarsha333/Software_project.git', branch: 'master')
       }
     }
-    stage('Change Dir') {
+    stage('Change repo') {
       steps {
-        dir(path: 'https://github.com/SaiSriHarsha333/Software_project/tree/master/rms')
+        git(url: 'https://github.com/SaiSriHarsha333/Software_project/tree/master/rms', branch: 'master')
       }
     }
   }
