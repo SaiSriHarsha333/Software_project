@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Change Dir') {
       steps {
-        dir(path: '/rms/')
+        dir(path: 'https://github.com/SaiSriHarsha333/Software_project/tree/master/rms')
       }
     }
   }
